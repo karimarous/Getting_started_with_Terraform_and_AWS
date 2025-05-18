@@ -9,3 +9,9 @@ In this repo you will find 22 labs that will help get confidence when your using
 Each lab has it's own Readme.md to help you execute the lab correctly
 
 Enjoy :)
+
+## Prerequesties
+
+- Ensure you have VS Code with Terraform Hashicorp extension installed
+- Ensure you have terraform installed
+- Ensure you have installed AWS and configured the access
