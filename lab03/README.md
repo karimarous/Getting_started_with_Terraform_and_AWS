@@ -3,7 +3,7 @@
 1.1. Create a file named backend.tf
 
 1.2 Copy the following code into backend.tf
-'''
+```
    terraform {
      backend "s3" {
        bucket         = "your-s3-bucket"
@@ -13,7 +13,7 @@
        encrypt        = true
      }
    } 
-'''
+```
 
 1.3 In the backend.tf file, replace "karim" with "your_name" 
 
@@ -21,6 +21,6 @@
 
 Run the following command
 
-'''
+```
    terraform init
-'''
+```

@@ -1,12 +1,12 @@
 # 1. Test terraform functions
 
 1.1 Run the following command
-'''
+```
 terraform console
-'''
+```
 
 1.2 Run the functions 
-'''
+```
 upper("karim")
 replace("hello world", "world", "Terraform")
 join("-", ["dev", "staging", "prod"])
@@ -17,4 +17,4 @@ timestamp()
 length(["a", "b", "c"])
 lookup({a = 1, b = 2}, "b", 0)
 merge({a = 1}, {b = 2})
-'''
+```

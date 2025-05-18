@@ -1,7 +1,7 @@
 # 1. Use condition
 
 1.1 Go to main.tf and replace to block resource aws_instance with the following code
-'''
+```
    resource "aws_instance" "instance" {
      count = 2
      ami           = var.ami
@@ -10,9 +10,9 @@
        Name = "${var.instance_name}-${local.env}-${count.index + 1}"
      }
    }
-'''
+```
 
 1.2 Run th following command
-'''
+```
    terraform apply -var-file=dev.tfvars
-'''
+```

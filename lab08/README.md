@@ -1,16 +1,16 @@
 # 1. Add an empty variable named env
 
 Copy the following code and update variables.tf
-'''
+```
     variable "env" {
       type = string
     }
-'''
+```
 
 # 2. Update ythe main.tf with the variable env
 
 Copy the following code and update variables.tf
-'''
+```
    resource "aws_security_group" "security_group" {
      name        = "${var.security_group_name}-${var.env}"
      description = "${var.security_group_description}-${var.env}"
@@ -26,9 +26,9 @@ Copy the following code and update variables.tf
        Name = "${var.instance_name}-${var.env}"
      }
    }
-'''
+```
 # 3. Pass the value of the variable using cli
 Run the following command
-'''
+```
    terraform apply -var 'env=dev'
-'''
+```

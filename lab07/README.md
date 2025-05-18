@@ -3,7 +3,7 @@
 1.1. Create a file named variables.tf
 
 1.2. Copy the following code into variables.tf
-'''
+```
     variable "security_group_name" {
       type = string
       default = "karim-security-group"
@@ -28,7 +28,7 @@
       type = string
       default = "karim-instance"
     }
-'''
+```
 
 1.3. Replace "karim" by "your_name" in variables.tf 
 
@@ -36,7 +36,7 @@
 
 2.1. Copy the following code into main.tf
 
-'''
+```
    resource "aws_security_group" "security_group" {
      name        = var.security_group_name
      description = var.security_group_description
@@ -52,11 +52,11 @@
        Name = var.instance_name
      }
    }
-'''
+```
 1.3 Run this command
-'''
+```
    terraform apply
-'''
+```
 Type "yes"
 
 

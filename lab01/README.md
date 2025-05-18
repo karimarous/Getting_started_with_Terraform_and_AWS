@@ -19,16 +19,16 @@ terraform {
 # 2. Configure provider bloc
 
 Update provider.tf file with the following code
-'''
+```
    provider "aws" {
      region = "us-east-1"
    }
-'''
+```
 
 # 3. Initialize terraform env
 
 Run the following command
 
-'''
+```
    terraform init
-'''
+```

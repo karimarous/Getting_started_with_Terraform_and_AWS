@@ -5,7 +5,7 @@
 1.2 Under the module folder create another folder named ec2
 
 1.3 Create a file named main.tf under ec2 folder and copy the following code
-'''
+```
 data "aws_ami" "ubuntu" {
   most_recent = true
   owners      = [var.ami_owner]
@@ -55,10 +55,10 @@ resource "aws_instance" "instance" {
     Name = var.instance_name
   }
 }
-'''
+```
 
 1.4 Create a file named variables.tf under ec2 folder and copy the following code
-'''
+```
  variable "sg_name" {
   type    = string
 }
@@ -107,17 +107,17 @@ variable "instance_name" {
 variable "env" {
   type    = string
 }
-'''
+```
 
 1.5 Create a file named outputs.tf under ec2 folder and copy the following code
-'''
+```
    output "instance_id" {
      description = "The ID of the EC2 instance"
      value       = aws_instance.instance.id
    }
-'''
+```
 1.6 In the root project, go to main.tf and override it with the following code
-'''
+```
    module "ec2" {
      source = "modules/ec2"
      env = local.env
@@ -131,10 +131,10 @@ variable "env" {
      instance_type = var.instance_type
      instance_name = var.instance_name
    }
-'''
+```
 
 1.7 In the root project override varaibles.tf with the following code
-'''
+```
 variable "sg_name" {
   type    = string
 }
@@ -179,10 +179,10 @@ variable "instance_type" {
 variable "instance_name" {
   type    = string
 }
-'''
+```
 
 1.8 In the root project override varaibles.tf with the following code
-'''
+```
 sg_name = "karim-sg"
 sg_description = "Security group with dynamic rules"
 sg_ingress_rules = [
@@ -218,17 +218,17 @@ ami_name = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"
 ami_virtualization_type = "hvm"
 instance_type = "t3.micro"
 instance_name = "karim-ec2"
-'''
+```
 
 1.9 Run the following commands
-'''
+```
 terraform init
 terraform apply -var-file=dev.tfvars
-'''
+```
 Type "yes"
 
 1.10 Run the following commands
-'''
+```
 terraform destroy -var-file=dev.tfvars
-'''
+```
 Type "yes"
