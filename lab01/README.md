@@ -3,6 +3,7 @@
 1.1. Create a file named provider.tf
 
 1.2 Copy the following code into provider.tf
+
 '''
 terraform {
   required_version = "~> 1.11.3"
