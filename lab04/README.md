@@ -59,7 +59,7 @@ Run the following command
    terraform refresh
 ```
 
-# 5 Fixing main.tf file
+# 5 Fix main.tf file
 5.1 Go to main.tf and overide the line "aws_security_group.security_group2" with "aws_security_group.security_group"
 
 5.2 Run the following command   

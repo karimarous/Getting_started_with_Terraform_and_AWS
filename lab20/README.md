@@ -2,7 +2,7 @@
 
 1.1 Create a folder named modules
 
-1.2 Under the module folder create another folder named ec2
+1.2 Under the modules folder create another folder named ec2
 
 1.3 Create a file named main.tf under ec2 folder and copy the following code
 ```
@@ -181,7 +181,7 @@ variable "instance_name" {
 }
 ```
 
-1.8 In the root project override varaibles.tf with the following code
+1.8 In the root project override dev.tfvars with the following code
 ```
 sg_name = "karim-sg"
 sg_description = "Security group with dynamic rules"

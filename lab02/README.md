@@ -42,7 +42,7 @@ Type "yes"
    }
 ```
 
-2.2 Replace "karim" with your name
+2.2 Replace "karim" with "your_name"
 
 2.3 Run the following commands
 ```

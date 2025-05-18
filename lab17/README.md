@@ -1,6 +1,6 @@
 # 1. Use ami data source and provision an ec2 instance
 
-1.1 Go to main.tf and add with the following code
+1.1 Go to main.tf and add the following code
 ```
    data "aws_ami" "ubuntu" {
      most_recent = true
@@ -52,7 +52,7 @@
 ```
 
 
-1.3 Go to dev.tfvars and override all the code with the following code
+1.3 Go to dev.tfvars and add the following code
 ```
    ami_owner = "099720109477" # Canonical  
    ami_name = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"

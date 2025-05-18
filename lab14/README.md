@@ -58,7 +58,7 @@
 
 1.4 Remove outputs.tf file
 
-1.4 Run th following command
+1.5 Run th following command
 ```
    terraform apply -var-file=dev.tfvars
 ```

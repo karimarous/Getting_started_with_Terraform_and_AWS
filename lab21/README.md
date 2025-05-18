@@ -1,7 +1,7 @@
 # 1. Create workspaces and deploy module on each env
 1.1 Rename the file "dev.tfvars" to "terraform.tfvars"
 
-1.2 Replace the code that exist in locals with the following code
+1.2 Replace the code that exist in locals.tf with the following code
 ```
    locals {
      env = terraform.workspace
@@ -28,5 +28,5 @@
 1.6 Go back to dev workspace
 Run the following command
 ```
-   terraform workspace new prod
+   terraform workspace select dev
 ```
