@@ -6,6 +6,6 @@ This repo in designed to help you learn how to use terraform with AWS
 
 In this repo you will find 22 labs that will help get confidence when your using terraform
 
-Each lab has it's own Readme.md to help execute the lab correctly
+Each lab has it's own Readme.md to help you execute the lab correctly
 
 Enjoy :)
