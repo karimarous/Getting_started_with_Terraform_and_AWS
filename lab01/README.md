@@ -4,15 +4,15 @@
 
 1.2 Copy the following code into provider.tf
 '''
-   terraform {
-     required_version = "~> 1.11.3"
-     required_providers {
-       aws = {
-         source  = "hashicorp/aws"
-         version = "5.92.0"
-       }
-     }
-   }
+terraform {
+  required_version = "~> 1.11.3"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "5.92.0"
+    }
+  }
+}
 '''
 
 # 2. Configure provider bloc
