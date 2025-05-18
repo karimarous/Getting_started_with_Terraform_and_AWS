@@ -4,7 +4,7 @@
 
 1.2 Copy the following code into provider.tf
 
-'''
+```
 terraform {
   required_version = "~> 1.11.3"
   required_providers {
@@ -14,7 +14,7 @@ terraform {
     }
   }
 }
-'''
+```
 
 # 2. Configure provider bloc
 
