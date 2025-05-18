@@ -12,6 +12,7 @@
    }
 ```
 1.3 Import resource (method 1)
+
 1.3.1 Run the following command
 ```
    terraform import aws_instance.instance_import instance_id
@@ -23,6 +24,7 @@
 ```
 
 1.4 Import resource (method 2)
+
 1.4.1 Open main.tf and update it with the following code
 ```
 import {

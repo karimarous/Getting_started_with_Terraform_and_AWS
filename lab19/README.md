@@ -4,7 +4,7 @@
 
 1.2 Download "karim.pem" key pair and put in the root directory of the project
 
-1.2 Go to main.tf and override it with the following code
+1.3 Go to main.tf and override it with the following code
 ```
    data "aws_ami" "ubuntu" {
      most_recent = true
@@ -76,9 +76,9 @@
    }
 ```
 
-1.3 Replace "karim" with "your_name"
+1.4 Replace "karim" with "your_name"
 
-1.4 Go to variables.tf and override it with the following code
+1.5 Go to variables.tf and override it with the following code
 ```
    variable "sg_name" {
      type    = string
@@ -133,7 +133,7 @@
    }
 ```
 
-1.5 Go to terraform.tfvars and override it with the following code
+1.6 Go to terraform.tfvars and override it with the following code
 ```
    sg_name = "karim-sg"
    sg_description = "Security group with dynamic rules"
@@ -174,13 +174,13 @@
    private_key_path = "./karim.pem" # Path to your private key
 ```
 
-1.6 Run the following command
+1.7 Run the following command
 ```
    terraform apply -var-file=dev.tfvars
 ```
 Type "yes"
 
-1.7 Delete resources
+1.8 Delete resources
 Run the following command
 ```
    terraform destroy -var-file=dev.tfvars

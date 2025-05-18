@@ -1,5 +1,6 @@
 # 1. Create workspaces and deploy module on each env
 1.1 Rename the file "dev.tfvars" to "terraform.tfvars"
+
 1.2 Replace the code that exist in locals with the following code
 ```
    locals {

@@ -1,6 +1,8 @@
 # 1. List content state file 
 1.1 Using state file in the remote backend
+
 1.1.1 Go to S3 bucket used in the remote backend and download the file that exist under karim folder
+
 1.1.2 Open the file downloaded
 
 1.2 Using Terraform CLI
@@ -22,6 +24,7 @@ Run the following command
 
 # 3 Rename terraform resource
 3.1 Using Terraform CLI 
+
 3.1.1 Go to main.tf and overide the line "aws_security_group.security_group" with "aws_security_group.security_group1"
 
 3.1.2 Run the following command   
@@ -31,7 +34,9 @@ Run the following command
 ```
 
 3.2 Using block moved and Terraform CLI (new approch)
+
 3.2.1 Go to main.tf and overide the line "aws_security_group.security_group1" with "aws_security_group.security_group2"
+
 3.2.2 Go to main.tf and copy the following code
 ```
    moved {

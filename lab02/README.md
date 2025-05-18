@@ -1,5 +1,7 @@
 # 1. Provision an EC2 instance
+
 1.1. Create a file named main.tf
+
 1.2. Copy the following code into main.tf
 ```
    resource "aws_security_group" "security_group" {
@@ -13,6 +15,7 @@
 1.3 Replace "karim" with your name
 
 1.4 Run the following commands
+
 1.4.1 Run the following command to see the resources that will be created
 ```
    terraform plan

@@ -10,8 +10,11 @@
 ```
 
 1.2 Go to variables.tf then remove the block variable env 
+
 1.3 Go to dev.tfvars and remove the ligne that start with "env ="
+
 1.4 Go to main.tf and replace any "var.env" with "local.env"
+
 2.2 Run the following command
 
 ```
