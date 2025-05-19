@@ -1,5 +1,5 @@
 # 1. Modify the resource out of terraform
-1.1. Modify the EC2 instance name from "karim-instance" to "karim-instance1" in the console
+1.1. Modify the EC2 instance name from "karim-instance" to "karim-instance1" in the AWS EC2 console
 
 1.2. Run the following command
 ```
