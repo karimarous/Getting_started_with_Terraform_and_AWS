@@ -7,7 +7,7 @@ Copy the following code and update variables.tf
     }
 ```
 
-# 2. Update ythe main.tf with the variable env
+# 2. Update the main.tf with the variable env
 
 Copy the following code and update variables.tf
 ```
