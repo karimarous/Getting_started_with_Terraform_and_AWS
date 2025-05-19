@@ -3,7 +3,7 @@
 
 1.2. Run the following command
 ```
-   terrform apply
+terrform apply
 ```
 
 # 2. Modify the resource in the terraform configuration file
