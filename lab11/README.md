@@ -4,9 +4,9 @@
 
 1.2 Create a file named locals.tf then copy the following code inside it
 ```
-   locals {
-     env = "dev"
-   }
+locals {
+   env = "dev"
+}
 ```
 
 1.2 Go to variables.tf then remove the block variable env 
@@ -18,6 +18,6 @@
 2.2 Run the following command
 
 ```
-   terraform apply -var-file="dev.tfvars"
+terraform apply -var-file="dev.tfvars"
 ```
 

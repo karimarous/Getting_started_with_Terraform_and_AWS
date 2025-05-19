@@ -14,7 +14,7 @@
 
 1.2 Run the following command
 ```
-    terraform apply
+    terraform apply -var-file="dev.tfvars"
 ```
 Type "yes"
 
@@ -25,11 +25,44 @@ Type "yes"
    security_group_name = "karim-security-group"
    security_group_description = "karim security group"
    instance_type = "t2.micro"
-   ami = "ami-0c55b159cbfafe1f0"
+   ami = "ami-0f9de6e2d2f067fca"
    instance_name = "karim-instance"
 ```
 
-2.2 Run the following command
+2.2 Override variables.tf with the following code
+
+Replace the variable instance_name bloc with the following code
+```
+variable "security_group_name" {
+  type = string
+}
+
+variable "security_group_description" {
+  type = string
+}
+
+variable "instance_type" {
+  type = string
+}
+
+variable "ami" {
+  type = string
+}
+
+variable "instance_name" {
+  type = string
+  validation {
+    condition = length(var.instance_name) > 5
+    error_message = "The instance name must more than 5 letters."
+  }
+}
+
+variable "env" {
+  type = string
+}
+```
+
+2.3 Run the following command
 
 ```
    terraform apply -var-file="dev.tfvars"

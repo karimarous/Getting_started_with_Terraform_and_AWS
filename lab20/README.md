@@ -111,26 +111,26 @@ variable "env" {
 
 1.5 Create a file named outputs.tf under ec2 folder and copy the following code
 ```
-   output "instance_id" {
-     description = "The ID of the EC2 instance"
-     value       = aws_instance.instance.id
-   }
+output "instance_id" {
+  description = "The ID of the EC2 instance"
+  value       = aws_instance.instance.id
+}
 ```
 1.6 In the root project, go to main.tf and override it with the following code
 ```
-   module "ec2" {
-     source = "modules/ec2"
-     env = local.env
-     sg_name = var.sg_name
-     sg_description = var.sg_description
-     sg_ingress_rules = var.sg_ingress_rules
-     sg_egress_rules = var.sg_egress_rules
-     ami_owner = var.ami_owner
-     ami_name = var.ami_name
-     ami_virtualization_type = var.ami_virtualization_type
-     instance_type = var.instance_type
-     instance_name = var.instance_name
-   }
+module "ec2" {
+  source = "modules/ec2"
+  env = local.env
+  sg_name = var.sg_name
+  sg_description = var.sg_description
+  sg_ingress_rules = var.sg_ingress_rules
+  sg_egress_rules = var.sg_egress_rules
+  ami_owner = var.ami_owner
+  ami_name = var.ami_name
+  ami_virtualization_type = var.ami_virtualization_type
+  instance_type = var.instance_type
+  instance_name = var.instance_name
+}
 ```
 
 1.7 In the root project override varaibles.tf with the following code

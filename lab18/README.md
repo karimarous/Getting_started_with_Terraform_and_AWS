@@ -24,37 +24,37 @@ terraform fmt
 # 2. Terraform validate
 2.1 Go to main.tf and replace the block resource aws_instance with the following code
 ```
-   resource "aws_instance" "ec2" {
-     ami                    = data.aws_ami.ubuntu.id
-     instance_type          = var.instance_type
-     subnet_id              = values(aws_subnet.subnet)[0].id
-     vpc_security_group_ids = [aws_security_group.sg.id]
-     uqtsyg
-     tags = {
-       Name = "${var.instance_name}-${local.env}"
-     }
-   }
+resource "aws_instance" "ec2" {
+  ami                    = data.aws_ami.ubuntu.id
+  instance_type          = var.instance_type
+  subnet_id              = values(aws_subnet.subnet)[0].id
+  vpc_security_group_ids = [aws_security_group.sg.id]
+  uqtsyg
+  tags = {
+    Name = "${var.instance_name}-${local.env}"
+  }
+}
 ```
 
 2.2 Run th following command
 ```
-   terraform validate
+terraform validate
 ```
 
 2.3 Go to main.tf and replace the block resource aws_instance with the following code
 ```
-   resource "aws_instance" "ec2" {
-     ami                    = data.aws_ami.ubuntu.id
-     instance_type          = var.instance_type
-     subnet_id              = values(aws_subnet.subnet)[0].id
-     vpc_security_group_ids = [aws_security_group.sg.id]
-     tags = {
-       Name = "${var.instance_name}-${local.env}"
-     }
-   }
+resource "aws_instance" "ec2" {
+  ami                    = data.aws_ami.ubuntu.id
+  instance_type          = var.instance_type
+  subnet_id              = values(aws_subnet.subnet)[0].id
+  vpc_security_group_ids = [aws_security_group.sg.id]
+  tags = {
+    Name = "${var.instance_name}-${local.env}"
+  }
+}
 ```
 
 2.2 Run th following command
 ```
-   terraform validate
+terraform validate
 ```

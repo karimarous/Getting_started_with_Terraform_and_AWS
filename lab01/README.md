@@ -1,4 +1,4 @@
-# 1. Configure terraform setttings block
+# 1. Configure terraform block
 
 1.1. Create a file named provider.tf
 
@@ -20,9 +20,9 @@ terraform {
 
 Update provider.tf file with the following code
 ```
-   provider "aws" {
-     region = "us-east-1"
-   }
+provider "aws" {
+  region = "us-east-1"
+}
 ```
 
 # 3. Initialize terraform env
@@ -30,5 +30,5 @@ Update provider.tf file with the following code
 Run the following command
 
 ```
-   terraform init
+terraform init
 ```

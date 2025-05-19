@@ -4,11 +4,11 @@
 
 1.2 Copy the following into dev.tfvars
 ```
-    env = "dev"
+env = "dev"
 ```
 
 1.3 Run the following command
 
 ```
-    terraform apply -var-file="dev.tfvars"
+terraform apply -var-file="dev.tfvars"
 ```

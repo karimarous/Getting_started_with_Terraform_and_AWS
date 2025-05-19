@@ -9,13 +9,13 @@
 # 2. Modify the resource in the terraform configuration file
 2.1. Replace the EC2 instance in main.tf with the following code
 ```
-   resource "aws_instance" "instance" {
-      ami           = "ami-0f9de6e2d2f067fca"
-      instance_type = "t3.micro"
-      tags = {
-      Name = "karim-instance1"
-      }
+resource "aws_instance" "instance" {
+   ami           = "ami-0f9de6e2d2f067fca"
+   instance_type = "t3.micro"
+   tags = {
+   Name = "karim-instance1"
    }
+}
 ```
 2.2 Replace "karim" with your name
 

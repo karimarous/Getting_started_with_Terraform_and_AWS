@@ -4,15 +4,15 @@
 
 1.2 Copy the following code into backend.tf
 ```
-   terraform {
-     backend "s3" {
-       bucket         = "your-s3-bucket"
-       key            = "karim/terraform.tfstate"
-       region         = "us-east-1"
-       use_lockfile   = "true"
-       encrypt        = true
-     }
-   } 
+terraform {
+  backend "s3" {
+    bucket         = "your-s3-bucket"
+    key            = "karim/terraform.tfstate"
+    region         = "us-east-1"
+    use_lockfile   = "true"
+    encrypt        = true
+  }
+} 
 ```
 
 1.3 In the backend.tf file, replace "karim" with "your_name" 
