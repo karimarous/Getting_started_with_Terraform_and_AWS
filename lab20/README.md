@@ -59,7 +59,7 @@ resource "aws_instance" "instance" {
 
 1.4 Create a file named variables.tf under ec2 folder and copy the following code
 ```
- variable "sg_name" {
+variable "sg_name" {
   type    = string
 }
 
