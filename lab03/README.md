@@ -22,5 +22,5 @@ terraform {
 Run the following command
 
 ```
-   terraform init
+terraform init
 ```

@@ -46,7 +46,7 @@ resource "aws_instance" "instance" {
 
 2.3 Run the following commands
 ```
-   terrform apply
+terrform apply
 ```
 
 2.4 Type "yes"
