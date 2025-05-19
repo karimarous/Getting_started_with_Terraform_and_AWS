@@ -229,6 +229,6 @@ Type "yes"
 
 1.10 Run the following commands
 ```
-terraform destroy -var-file=dev.tfvars
+terraform destroy -var-file="dev.tfvars"
 ```
 Type "yes"

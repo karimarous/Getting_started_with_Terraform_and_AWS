@@ -32,5 +32,5 @@ Type "yes"
 2.2 Run the following command
 
 ```
-   terraform apply -var-file=dev.tfvars
+   terraform apply -var-file="dev.tfvars"
 ```

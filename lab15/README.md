@@ -71,11 +71,11 @@ Replace "karim" with "your_name"
 
 1.4 Run th following command
 ```
-   terraform apply -var-file=dev.tfvars
+   terraform apply -var-file="dev.tfvars"
 ```
 Type "yes"
 
 1.5 Run the following command
 ```
-   terraform destroy -var-file=dev.tfvars
+   terraform destroy -var-file="dev.tfvars"
 ```

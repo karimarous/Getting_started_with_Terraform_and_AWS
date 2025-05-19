@@ -11,7 +11,6 @@ Each lab has it's own Readme.md to help you execute the lab correctly
 Enjoy :)
 
 ## Prerequesties
-
-- Ensure you have VS Code with Terraform Hashicorp extension installed
-- Ensure you have terraform installed
+- Ensure you have terraform >=v1.12.0 installed
 - Ensure you have installed AWS and configured the access
+- Ensure you have VS Code with Terraform Hashicorp extension installed
