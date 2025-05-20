@@ -1,0 +1,6 @@
+env = "dev"
+security_group_name = "karim-security-group"
+security_group_description = "karim security group"
+instance_type = "t2.micro"
+ami = "ami-0f9de6e2d2f067fca"
+instance_name = "karim-instance"
