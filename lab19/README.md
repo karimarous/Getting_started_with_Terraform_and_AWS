@@ -133,7 +133,7 @@ variable "private_key_path" {
 }
 ```
 
-1.6 Go to terraform.tfvars and override it with the following code
+1.6 Go to dev.tfvars and override it with the following code
 ```
 sg_name = "karim-sg"
 sg_description = "Security group with dynamic rules"

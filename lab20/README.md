@@ -119,7 +119,7 @@ output "instance_id" {
 1.6 In the root project, go to main.tf and override it with the following code
 ```
 module "ec2" {
-  source = "modules/ec2"
+  source = "./modules/ec2"
   env = local.env
   sg_name = var.sg_name
   sg_description = var.sg_description
