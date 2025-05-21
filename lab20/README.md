@@ -223,12 +223,12 @@ instance_name = "karim-ec2"
 1.9 Run the following commands
 ```
 terraform init
-terraform apply -var-file=dev.tfvars
+terraform apply
 ```
 Type "yes"
 
 1.10 Run the following commands
 ```
-terraform destroy -var-file="dev.tfvars"
+terraform destroy 
 ```
 Type "yes"

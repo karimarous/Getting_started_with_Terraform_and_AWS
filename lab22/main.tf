@@ -13,9 +13,14 @@ module "ec2" {
 }
 
 resource "aws_instance" "instance_import" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = var.instance_type
+  ami           = "ami_id"
+  instance_type = "instance_type"
   tags = {
-    Name = "instance-import"
+   Name = "instance-import"
   }
+}
+
+import {
+  to = aws_instance.web
+  id = "instance_id"
 }
