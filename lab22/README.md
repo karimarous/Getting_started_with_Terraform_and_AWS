@@ -4,13 +4,17 @@
 1.2 Open main.tf in the root project and add the following code
 ```
 resource "aws_instance" "instance_import" {
-   ami           = data.aws_ami.ubuntu.id
-   instance_type = var.instance_type
-   tags = {
-      Name = "instance-import"
-   }
+  ami           = "ami_id"
+  instance_type = "instance_type"
+  tags = {
+    Name = "instance-import"
+  }
 }
 ```
+
+Replace ami_id with the ami id of the running instance
+Replace instance_type with the instance type of the running instance
+
 1.3 Import resource (method 1)
 
 1.3.1 Run the following command
@@ -33,6 +37,8 @@ import {
 }
 ```
 
+Replace instance_id with the id of the running instance
+
 1.4.2 Run the following command
 ```
 terraform apply
@@ -40,7 +46,7 @@ terraform apply
 Type "yes"
 
 1.5 Destroy all resources
- Run the following command
+Run the following command
 ```
 terraform destroy
 ```
