@@ -4,11 +4,11 @@
 
 1.2. Copy the following code into main.tf
 ```
-resource "aws_security_group" "security_group" {
-   name        = "karim-security-group"
-   description = "Karim security group"
+resource "aws_instance" "instance" {
+   ami           = "ami-0f9de6e2d2f067fca"
+   instance_type = "t3.micro"
    tags = {
-      Name = "karim-security-group"
+      Name = "karim-instance"
    }
 }
 ```
@@ -33,11 +33,11 @@ Type "yes"
 2.1. Update main.tf with the following code
 
 ```
-resource "aws_instance" "instance" {
-   ami           = "ami-0f9de6e2d2f067fca"
-   instance_type = "t3.micro"
+resource "aws_security_group" "security_group" {
+   name        = "karim-security-group"
+   description = "Karim security group"
    tags = {
-      Name = "karim-instance"
+      Name = "karim-security-group"
    }
 }
 ```
