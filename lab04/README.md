@@ -71,7 +71,7 @@ terraform refresh
 ```
 
 # 5. Fix main.tf file
-5.1 Go to main.tf and overide the line "security_group2" with "security_group"
+5.1 Go to main.tf and replace "security_group2" with "security_group"
 
 5.2 Run the following command   
 ```
