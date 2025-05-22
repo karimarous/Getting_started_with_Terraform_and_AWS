@@ -14,8 +14,8 @@ locals {
 4. Go to dev.tfvars and remove the ligne that start with "env ="
 
 5. Go to main.tf and replace any "var.env" with "local.env"
-Run the following command
 
+Run the following command
 ```
 terraform apply -var-file="dev.tfvars"
 ```
