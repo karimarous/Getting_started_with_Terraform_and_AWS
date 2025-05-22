@@ -14,6 +14,7 @@ terraform {
   }
 } 
 ```
+Modify your-s3-bucket with the bucket that you want to use
 
 1.3 In the backend.tf file, replace "karim" with "your_name" 
 
