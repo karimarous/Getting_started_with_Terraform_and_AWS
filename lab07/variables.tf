@@ -5,12 +5,12 @@ variable "security_group_name" {
 
 variable "security_group_description" {
   type = string
-  default = "karim security group"
+  default = "Karim security group"
 }
 
 variable "instance_type" {
   type = string
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "ami" {

@@ -16,7 +16,7 @@ variable "security_group_description" {
 
 variable "instance_type" {
   type = string
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "ami" {
