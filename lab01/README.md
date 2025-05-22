@@ -21,7 +21,7 @@ terraform {
 Update provider.tf file with the following code
 ```
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-3"
 }
 ```
 

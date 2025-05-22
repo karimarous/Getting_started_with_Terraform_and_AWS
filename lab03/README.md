@@ -8,7 +8,7 @@ terraform {
   backend "s3" {
     bucket         = "your-s3-bucket"
     key            = "karim/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "us-east-1" # your s3 bucket region
     use_lockfile   = "true"
     encrypt        = true
   }

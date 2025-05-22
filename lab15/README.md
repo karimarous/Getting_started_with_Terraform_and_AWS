@@ -16,6 +16,15 @@ resource "aws_security_group" "sg" {
       cidr_blocks = ingress.value.cidr_blocks
     }
   }
+  dynamic "egress" {
+    for_each = var.sg_egress_rules
+    content {
+      from_port   = ingress.value.from_port
+      to_port     = ingress.value.to_port
+      protocol    = ingress.value.protocol
+      cidr_blocks = ingress.value.cidr_blocks
+    }
+  }
   tags = {
     Name = "${var.sg_name}-${local.env}"
   }

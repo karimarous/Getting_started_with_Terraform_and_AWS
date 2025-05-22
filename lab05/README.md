@@ -30,14 +30,14 @@ terrform apply
 3.1 Replace the EC2 instance in main.tf with the following code
 ```
 resource "aws_instance" "instance" {
-   ami           = "ami-id"
+   ami           = "ami-0ff71843f814379b3"
    instance_type = "t3.micro"
    tags = {
    Name = "karim-instance"
    }
 }
 ```
-3.2 Replace "ami-id" with an ami of the EC2 instance created earlier in lab and Replace "karim" with your name
+3.2 Replace "karim" with your name
 
 3.3. Run the following command
 ```

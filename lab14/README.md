@@ -56,7 +56,16 @@ public_subnets = {
 }
 ```
 
-1.4 Remove outputs.tf file
+1.4 Go to outputs.tf and override it with the following code
+```
+output "vpc_id" {
+  value = aws_vpc.main.id
+}
+
+output "public_subnet_ids" {
+  value = [for subnet in aws_subnet.public : subnet.id]
+}
+```
 
 1.5 Run th following command
 ```
