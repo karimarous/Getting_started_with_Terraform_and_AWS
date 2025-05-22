@@ -24,7 +24,7 @@ terraform plan
 1.4.2 Run the following command to provision the resources
 
 ```
-terroform apply
+terraform apply
 ```
 
 Type "yes"
@@ -46,7 +46,7 @@ resource "aws_security_group" "security_group" {
 
 2.3 Run the following commands
 ```
-terroform apply
+terraform apply
 ```
 
 2.4 Type "yes"
