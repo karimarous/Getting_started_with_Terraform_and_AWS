@@ -5,7 +5,7 @@ variable "security_group_name" {
 
 variable "security_group_description" {
   type = string
-  default = "Karim security group"
+  default = "karim security group"
 }
 
 variable "instance_type" {

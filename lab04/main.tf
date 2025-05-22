@@ -1,6 +1,6 @@
 resource "aws_security_group" "security_group" {
   name        = "karim-security-group"
-  description = "Karim security group"
+  description = "karim security group"
   tags = {
     Name = "karim-security-group"
   }
