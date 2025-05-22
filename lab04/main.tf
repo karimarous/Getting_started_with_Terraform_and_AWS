@@ -7,7 +7,7 @@ resource "aws_security_group" "security_group" {
 }
 
 resource "aws_instance" "instance" {
-  ami           = "ami-0f9de6e2d2f067fca"
+  ami           = "ami-0ff71843f814379b3"
   instance_type = "t3.micro"
   tags = {
     Name = "karim-instance"

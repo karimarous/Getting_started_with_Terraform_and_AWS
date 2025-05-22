@@ -5,19 +5,20 @@
 ```
 terrform apply
 ```
+1.3 Go to AWS EC2 console and verify the name of the instance
 
 # 2. Modify the resource in the terraform configuration file
 2.1. Replace the EC2 instance in main.tf with the following code
 ```
 resource "aws_instance" "instance" {
-   ami           = "ami-0f9de6e2d2f067fca"
+   ami           = "ami-id"
    instance_type = "t3.micro"
    tags = {
    Name = "karim-instance1"
    }
 }
 ```
-2.2 Replace "karim" with your name
+2.2 Replace "ami-id" with an ami of the EC2 console and Replace "karim" with your name
 
 2.3. Run the following command
 ```
@@ -29,16 +30,16 @@ terrform apply
 3.1 Replace the EC2 instance in main.tf with the following code
 ```
 resource "aws_instance" "instance" {
-   ami           = "ami-0f9de6e2d2f067fca"
+   ami           = "ami-id"
    instance_type = "t3.micro"
    tags = {
    Name = "karim-instance"
    }
 }
 ```
-2.2 Replace "karim" with your name
+3.2 Replace "ami-id" with an ami of the EC2 instance created earlier in lab and Replace "karim" with your name
 
-2.3. Run the following command
+3.3. Run the following command
 ```
 terrform apply
 ```

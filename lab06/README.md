@@ -29,4 +29,9 @@ terraform apply
 terraform output instance_id
 ```
 
+1.6 Run this command to list all outputs
+
+```
+terraform output 
+```
 

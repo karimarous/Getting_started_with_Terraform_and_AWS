@@ -5,14 +5,14 @@
 1.2. Copy the following code into main.tf
 ```
 resource "aws_instance" "instance" {
-   ami           = "ami-id"
+   ami           = "ami-0ff71843f814379b3"
    instance_type = "t3.micro"
    tags = {
       Name = "karim-instance"
    }
 }
 ```
-1.3 Replace "ami-id" with the ami that you want to use and replace "karim" with your name
+1.3 Replace "karim" with your name
 
 1.4 Run the following commands
 
