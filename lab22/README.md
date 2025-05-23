@@ -45,6 +45,8 @@ terraform apply
 ```
 Type "yes"
 
+1.4.2 Delete the import bloc
+
 1.5 Destroy all resources
 Run the following command
 ```
