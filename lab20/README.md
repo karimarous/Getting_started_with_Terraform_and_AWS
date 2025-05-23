@@ -133,7 +133,7 @@ module "ec2" {
 }
 ```
 
-1.7 In the root project override varaibles.tf with the following code
+1.7 In the root project override variables.tf with the following code
 ```
 variable "sg_name" {
   type    = string
