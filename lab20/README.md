@@ -229,6 +229,6 @@ Type "yes"
 
 1.10 Run the following commands
 ```
-terraform destroyZ
+terraform destroy
 ```
 Type "yes"
