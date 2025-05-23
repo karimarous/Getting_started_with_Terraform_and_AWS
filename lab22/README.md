@@ -32,7 +32,7 @@ terraform state rm aws_instance.instance_import
 1.4.1 Open main.tf and update it with the following code
 ```
 import {
-  to = aws_instance.web
+  to = aws_instance.instance_import
   id = "instance_id"
 }
 ```
