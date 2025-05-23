@@ -54,7 +54,7 @@ resource "aws_instance" "ec2" {
 }
 ```
 
-2.2 Run th following command
+2.4 Run th following command
 ```
 terraform validate
 ```

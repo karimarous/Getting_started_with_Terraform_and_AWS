@@ -174,13 +174,15 @@ key_name      = "karim"
 private_key_path = "./karim.pem" # Path to your private key
 ```
 
-1.7 Run the following command
+1.7 Delete outputs.tf 
+
+1.8 Run the following command
 ```
 terraform apply -var-file="dev.tfvars"
 ```
 Type "yes"
 
-1.8 Delete resources
+1.9 Delete resources
 Run the following command
 ```
 terraform destroy -var-file="dev.tfvars"
