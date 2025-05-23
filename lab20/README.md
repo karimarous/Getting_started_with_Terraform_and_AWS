@@ -181,7 +181,7 @@ variable "instance_name" {
 }
 ```
 
-1.8 In the root project rename the file dev.tfvars to terraform.tfvars and override it with the following code
+1.8 In the root project rename the file "dev.tfvars" to "terraform.tfvars" and override it with the following code
 ```
 sg_name = "karim-sg"
 sg_description = "Security group with dynamic rules"
