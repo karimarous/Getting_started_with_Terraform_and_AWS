@@ -60,7 +60,7 @@ type = list(object({
 }
 ```
 
-1.3 Go to dev.tfvars and override all the code with the following code
+1.3 Go to dev.tfvars and add the following code
 ```
 sg_name = "karim-sg"
 sg_description = "Security group with dynamic rules"
