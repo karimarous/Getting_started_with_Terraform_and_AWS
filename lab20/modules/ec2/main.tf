@@ -16,7 +16,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_security_group" "ssh" {
   name_prefix = "allow_inboud_outboud"
   description = var.sg_description
-  
+
   dynamic "ingress" {
     for_each = var.sg_ingress_rules
     content {
@@ -45,6 +45,6 @@ resource "aws_instance" "instance" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
   tags = {
-    Name = var.instance_name
+    Name = "var.instance_name-${var.env}"
   }
 }
