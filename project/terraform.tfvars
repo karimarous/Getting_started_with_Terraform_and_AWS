@@ -16,7 +16,7 @@ env_subnets_caracteristics = {
             az = "eu-west-3b"
             },
             {
-            name = "public-subnet-web-2"
+            name = "public-subnet-web-3"
             cidr = "10.16.176.0/20"
             az = "eu-west-3c"
             }
@@ -33,7 +33,7 @@ env_subnets_caracteristics = {
             az = "eu-west-3b"
             },
             {
-            name = "private-subnet-app-2"
+            name = "private-subnet-app-3"
             cidr = "10.16.160.0/20"
             az = "eu-west-3c"
             }
@@ -50,7 +50,7 @@ env_subnets_caracteristics = {
             az = "eu-west-3b"
             },
             {
-            name = "private-subnet-db-2"
+            name = "private-subnet-db-3"
             cidr = "10.16.144.0/20"
             az = "eu-west-3c"
             }
