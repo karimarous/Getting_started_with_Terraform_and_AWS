@@ -19,7 +19,7 @@ resource "aws_subnet" "subnet" {
   }
 }
 
-resource "aws_security_group" "sg" {
+resource "aws_security_group" "security_group" {
   name        = "${var.sg_name}-${local.env}"
   description = "Security group with dynamic rules"
   vpc_id      = aws_vpc.vpc.id

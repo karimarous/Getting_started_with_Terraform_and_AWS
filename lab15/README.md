@@ -2,7 +2,7 @@
 
 1.1 Go to main.tf and add the following code
 ```
-resource "aws_security_group" "sg" {
+resource "aws_security_group" "security_group" {
   name        = "${var.sg_name}-${local.env}"
   description = var.sg_description
   vpc_id      = aws_vpc.vpc.id
