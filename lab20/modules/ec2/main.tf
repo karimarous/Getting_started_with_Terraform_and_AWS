@@ -16,6 +16,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_security_group" "ssh" {
   name_prefix = "allow_inboud_outboud"
   description = var.sg_description
+  
   dynamic "ingress" {
     for_each = var.sg_ingress_rules
     content {
