@@ -181,7 +181,7 @@ variable "instance_name" {
 }
 ```
 
-1.8 In the root project override dev.tfvars with the following code
+1.8 In the root project rename the file dev.tfvars to terraform.tfvars and override it with the following code
 ```
 sg_name = "karim-sg"
 sg_description = "Security group with dynamic rules"
@@ -222,13 +222,13 @@ instance_name = "karim-ec2"
 
 1.9 Run the following commands
 ```
-terraform init
+terraform init 
 terraform apply 
 ```
 Type "yes"
 
 1.10 Run the following commands
 ```
-terraform destroy 
+terraform destroyZ
 ```
 Type "yes"
