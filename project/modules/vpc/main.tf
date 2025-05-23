@@ -39,7 +39,6 @@ resource "aws_subnet" "private_subnets_app" {
   vpc_id                  = aws_vpc.vpc.id
   cidr_block              = var.env_subnets_caracteristics.app[count.index].cidr
   availability_zone       = var.env_subnets_caracteristics.app[count.index].az
-  map_public_ip_on_launch = true
 
   tags = {
     Name = "${var.env_subnets_caracteristics.app[count.index].name}-${var.env}"
@@ -54,7 +53,6 @@ resource "aws_subnet" "private_subnets_db" {
   vpc_id                  = aws_vpc.vpc.id
   cidr_block              = var.env_subnets_caracteristics.db[count.index].cidr
   availability_zone       = var.env_subnets_caracteristics.db[count.index].az
-  map_public_ip_on_launch = true
 
   tags = {
     Name = "${var.env_subnets_caracteristics.db[count.index].name}-${var.env}"
