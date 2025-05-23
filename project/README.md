@@ -1,5 +1,5 @@
 # Project-terraform-aws
-![AWS Project](project.png)
+![AWS Project](project.jpeg)
 
 ## 1. Create a dev workspace
 Run the following command
