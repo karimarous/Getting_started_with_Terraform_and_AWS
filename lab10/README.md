@@ -29,9 +29,8 @@ ami = "ami-0ff71843f814379b3"
 instance_name = "karim-instance"
 ```
 
-2.2 Override variables.tf with the following code
+2.2 Override variables.tf content with the following code
 
-Replace the variable instance_name bloc with the following code
 ```
 variable "security_group_name" {
   type = string
