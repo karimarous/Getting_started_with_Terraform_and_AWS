@@ -14,5 +14,5 @@ terraform apply
 
 ## 3. Destroy all resources
 ```
-terraform Destroy 
+terraform destroy 
 ```
