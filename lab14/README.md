@@ -22,6 +22,7 @@ resource "aws_subnet" "subnet" {
   }
 }
 ```
+Don't forget to update vpc name
 
 1.2 Go to variables.tf and override all the code with the following code
 ```
